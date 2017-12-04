@@ -36,8 +36,8 @@ void UPlayerMovementComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	
-	ForceMovement();
-	LookAtMouse();
+	//ForceMovement();
+	//LookAtMouse();
 }
 
 void UPlayerMovementComponent::MoveHorizontally(float value)
