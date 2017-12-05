@@ -56,7 +56,7 @@ void UPlayerMovementComponent::ForceMovement()
 {
 	
 	Parent->FindComponentByClass<UCapsuleComponent>()->AddForce(ForceVector, NAME_None, true);
-	
+	//Parent->
 }
 
 void UPlayerMovementComponent::Setup()
