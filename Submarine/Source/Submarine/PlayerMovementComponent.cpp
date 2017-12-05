@@ -36,7 +36,7 @@ void UPlayerMovementComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	
-	//ForceMovement();
+	ForceMovement();
 	//LookAtMouse();
 }
 
@@ -56,6 +56,7 @@ void UPlayerMovementComponent::ForceMovement()
 {
 	
 	Parent->FindComponentByClass<UCapsuleComponent>()->AddForce(ForceVector, NAME_None, true);
+	
 }
 
 void UPlayerMovementComponent::Setup()
